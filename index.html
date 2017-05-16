@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html lang="cn" class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html lang="cn" class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html lang="cn"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Smarty模板框架：价值$18</title>
+    <meta name="keywords" content="关键字" />
+    <meta name="description" content="说明文档" />
+    <meta name="Author" content="作者" />
+    <!-- 手机端设置 -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+
+    <!-- 基础 CSS -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- 插件 -->
+    <link href="plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+    <!-- 主题 CSS -->
+    <link href="style/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="style/layout.css" rel="stylesheet" type="text/css" />
+    <!--<link href="style/css.css" rel="stylesheet" type="text/css" />-->
+    <!-- 页面组件 -->
+    <link href="style/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="style/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+<body class="smoothscroll enable-animation">
+
+<!-- 顶部区域 -->
+<div id="slidetop">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <h6><i class="icon-heart"></i> 为什么选择我们?</h6>
+                <p>文案示范： 秉承“品质第一，用户至上”的宗旨，坚持始于客户要求，终于客户满意的原则， 励迪树立坚定明确的品质观念，秉持专业精神，专注核心优势，追求卓越品质， 以优质的产品，高品质的售后服务不断提升产品价值和企业形象</p>
+            </div>
+
+            <div class="col-md-4">
+                <h6><i class="icon-attachment"></i>信息发布</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fa fa-angle-right"></i> 衍生科技将站在新的起点，坦然迎接机遇和挑战</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> 精诚合作，远见未来</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> 在瞬息万变的市场面前不断超越自我，积极创新</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> 与广大合作伙伴携手共赢，再创新的辉煌</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> 向着打造行业标杆的目标奋勇迈进</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h6><i class="icon-envelope"></i> 联系方式</h6>
+                <ul class="list-unstyled">
+                    <li><b>地址:</b> 河南郑州金水区 万象城 A 楼 1002室</li>
+                    <li><b>电话:</b> 1-800-565-2390</li>
+                    <li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a class="slidetop-toggle" href="#"><!-- toggle button --></a>
+
+</div>
+<!-- /顶部区域 -->
+
+<!-- 页面主体 -->
+<div id="wrapper">
+
+    <!-- 顶部功能栏 -->
+    <div id="topBar">
+        <div class="container">
+
+            <!-- 右边 -->
+            <ul class="top-links list-inline pull-right">
+                <li class="text-welcome hidden-xs">衍生科技欢迎您的到来！</li>
+                <li>
+                    <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#" style="color: white"><i class="fa fa-user hidden-xs"></i> 用户中心</a>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a tabindex="-1" href="#"><i class="fa fa-history"></i> 登陆</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#"><i class="fa fa-bookmark"></i> 注册</a></li>
+                        <li><a tabindex="-1" href="#"><i class="fa fa-edit"></i> 我的资料</a></li>
+                        <li><a tabindex="-1" href="#"><i class="fa fa-cog"></i> 设置</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-off"></i> 退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 左边 -->
+            <ul class="top-links list-inline">
+                <li class="hidden-xs"><a href="page-contact-1.html">联系我们</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /顶部功能栏 -->
+
+    <!-- 头部 -->
+    <div id="header" class="sticky shadow-after-3 clearfix">
+        <!-- 顶部导航 -->
+        <header id="topNav">
+            <div class="container">
+
+                <!-- 移动端按钮 -->
+                <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- 按钮 -->
+                <ul class="pull-right nav nav-pills nav-second-main">
+
+                    <!-- 搜索 -->
+                    <li class="search">
+                        <a href="javascript:;">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <div class="search-box">
+                            <form action="#" method="get">
+                                <div class="input-group">
+                                    <input type="text" name="src" placeholder="输入搜索的内容" class="form-control" />
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="submit">搜索</button>
+											</span>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- /搜索 -->
+                </ul>
+                <!-- /按钮 -->
+
+
+                <!-- Logo -->
+                <a class="logo pull-left" href="index.html">
+                    <img src="images/logo_dark.png" alt="" />
+                </a>
+                <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+                    <nav class="nav-main">
+                        <ul id="topMain" class="nav nav-pills nav-main">
+                            <li class="dropdown active"><!-- HOME -->
+                                <a class="" href="#">
+                                    首页
+                                </a>
+                            </li>
+                            <li class="dropdown"><!-- PAGES -->
+                                <a class="dropdown-toggle" href="#">
+                                    关于衍生
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#">
+                                            关于衍生
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">企业文化</a></li>
+                                            <li><a href="#">领导致辞</a></li>
+                                            <li><a href="#">战略伙伴</a></li>
+                                            <li><a href="#">加盟合作</a></li>
+                                            <li><a href="#">服务客户</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">联系我们</a></li>
+                                    <li><a href="#">站点地图</a></li>
+                                    <li><a href="#">企业招聘</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><!-- FEATURES -->
+                                <a class="dropdown-toggle" href="#">
+                                    品牌展示
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#">
+                                            <i class="et-browser"></i> 品牌图标
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-toggle" href="#">阿里斯红酒</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">X9系列</a></li>
+                                                    <li><a href="#">X8系列</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">X7.8系列</a></li>
+                                                    <li><a href="#">X7.7系列</a></li>
+                                                    <li><a href="#">X7.5系列</a></li>
+                                                    <li><a href="#">X7.4系列</a></li>
+                                                    <li><a href="#">X7.1系列</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">喜乐天酒店</a></li>
+                                            <li><a href="#">高山旅游</a></li>
+                                            <li><a href="#">依云矿泉水</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#">
+                                            <i class="et-hotairballoon"></i>  名誉出品
+                                        </a>
+                                    </li>
+                                    <li><a target="_blank" href="#"><i class="et-gears"></i> 会员登录</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown mega-menu"><!-- PORTFOLIO -->
+                                <a class="dropdown-toggle" href="#">
+                                   服务业务
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="row">
+
+                                            <div class="col-md-5th">
+                                                <ul class="list-unstyled">
+                                                    <li><span>最新动态</span></li>
+                                                    <li><a href="#">动态展示区</a></li>
+                                                    <li><a href="#">新闻</a></li>
+                                                    <li><a href="#">产品展示区</a></li>
+                                                    <li><a href="#">广告展示区</a></li>
+                                                    <li><a href="#">业务咨询区</a></li>
+                                                    <li><a href="#">留言</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-md-5th">
+                                                <ul class="list-unstyled">
+                                                    <li><span>最新动态</span></li>
+                                                    <li><a href="#">动态展示区</a></li>
+                                                    <li><a href="#">新闻</a></li>
+                                                    <li><a href="#">产品展示区</a></li>
+                                                    <li><a href="#">广告展示区</a></li>
+                                                    <li><a href="#">业务咨询区</a></li>
+                                                    <li><a href="#">留言</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-md-5th">
+                                                <ul class="list-unstyled">
+                                                    <li><span>推荐动态</span></li>
+                                                    <li><a href="#">动态展示区</a></li>
+                                                    <li><a href="#">新闻</a></li>
+                                                    <li><a href="#">产品展示区</a></li>
+                                                    <li><a href="#">广告展示区</a></li>
+                                                    <li><a href="#">业务咨询区</a></li>
+                                                    <li><a href="#">留言</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-md-5th">
+                                                <ul class="list-unstyled">
+                                                    <li><span>动态展示</span></li>
+                                                    <li><a href="#">动态展示区</a></li>
+                                                    <li><a href="#">新闻</a></li>
+                                                    <li><a href="#">产品展示区</a></li>
+                                                    <li><a href="#">广告展示区</a></li>
+                                                    <li><a href="#">业务咨询区</a></li>
+                                                    <li><a href="#">留言</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-md-5th">
+                                                <ul class="list-unstyled">
+                                                    <li><span>公司新闻</span></li>
+                                                    <li><a href="#">动态展示区</a></li>
+                                                    <li><a href="#">新闻</a></li>
+                                                    <li><a href="#">产品展示区</a></li>
+                                                    <li><a href="#">广告展示区</a></li>
+                                                    <li><a href="#">业务咨询区</a></li>
+                                                    <li><a href="#">留言</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><!-- BLOG -->
+                                <a class="dropdown-toggle" href="#">
+                                    新闻中心
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a class="" href="#">
+                                            公司新闻
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><!-- SHOP -->
+                                <a class="" href="#">
+                                   联系我们
+                                </a>
+                            </li>
+                            <li>
+                                <a id="sidepanel_btn" href="#" class="fa fa-bars"></a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <!-- /顶部导航 -->
+    </div>
+    <!-- /头部 -->
+
+    <!-- 全屏焦点图 -->
+    <div class="slider fullwidthbanner-container roundedcorners">
+        <div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
+            <ul class="hide">
+
+                <!-- SLIDE  -->
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="10000" data-saveperformance="off" data-title="Slide 1" style="background-color: #F6F6F6;">
+
+                    <img src="images/grey-noise-min.jpg" alt="video" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                    <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
+                         data-x="left" data-hoffset="0"
+                         data-y="70"
+                         data-customin="x:-200;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="400"
+                         data-start="1000"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn">
+                        <img src="images/desktop_slider_2.png" alt="">
+                    </div>
+
+                    <div class="tp-caption large_bold_grey skewfromrightshort customout font-open-sans"
+                         data-x="645"
+                         data-y="70"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="800"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 4; font-weight:bold;">Derive
+                    </div>
+
+                    <div class="tp-caption large_bold_grey skewfromleftshort customout font-open-sans"
+                         data-x="645"
+                         data-y="133"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="300"
+                         data-start="1100"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 7; font-weight:bold !important;">衍生科技欢迎你
+                    </div>
+
+                    <div class="tp-caption ltl customin customout small_light_white font-lato"
+                         data-x="650"
+                         data-y="235"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="500"
+                         data-start="1300"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn" style=" color: #333; font-size:20px; max-width: 550px; white-space: normal; text-shadow:none;">
+                        文案示范： 秉承“品质第一，用户至上”的宗旨，坚持始于客户要求，终于客户满意的原则， 励迪树立坚定明确的品质观念，秉持专业精神，专注核心优势，追求卓越品质， 以优质的产品，高品质的售后服务不断提升产品价值和企业形象
+                    </div>
+
+
+                    <div class="tp-caption large_bold_darkblue skewfromleftshort customout"
+                         data-x="650" data-hoffset="-90"
+                         data-y="370"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="1600"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 10; text-shadow:none;">550+
+                    </div>
+
+                    <div class="tp-caption medium_bg_darkblue skewfromleftshort customout"
+                         data-x="650" data-hoffset="-90"
+                         data-y="430"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="1650"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 11; text-shadow:none;">客户的选择
+                    </div>
+
+                    <div class="tp-caption medium_bold_red skewfromleftshort customout start font300"
+                         data-x="800" data-hoffset="-90"
+                         data-y="390"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="1850"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 13; text-shadow:none; font-weight:300;">+ 优秀的 <strong>案例</strong>
+                    </div>
+
+                    <div class="tp-caption medium_bg_red skewfromleftshort customout"
+                         data-x="800" data-hoffset="-90"
+                         data-y="430"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="2300"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 21; text-shadow:none;">商业价值
+                    </div>
+
+                </li>
+
+                <!-- SLIDE  -->
+                <li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide 2">
+
+                    <img src="images/1x1.png" data-lazyload="images/index-min.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+                    <div class="overlay dark-1"><!-- dark overlay [1 to 9 opacity] --></div>
+
+                    <div class="tp-caption customin ltl tp-resizeme text_white"
+                         data-x="center"
+                         data-y="155"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-start="1000"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn" style="z-index: 10;">
+                        <span class="weight-300">商业价值 / 高效处理 / 快速反应 / 专注精神</span>
+                    </div>
+
+                    <div class="tp-caption customin ltl tp-resizeme large_bold_white"
+                         data-x="center"
+                         data-y="205"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-start="1200"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn" style="z-index: 10;">
+                        欢迎你来到 Deriver
+                    </div>
+
+                    <div class="tp-caption customin ltl tp-resizeme small_light_white font-lato"
+                         data-x="center"
+                         data-y="295"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-start="1400"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn" style="z-index: 10; width: 100%; max-width: 750px; white-space: normal; text-align:center; font-size:20px;">
+                        微风拂过，你我同在。目光所及皆是祝福，你好我便好。心若在，爱还在..
+                    </div>
+
+                    <div class="tp-caption customin ltl tp-resizeme"
+                         data-x="center"
+                         data-y="383"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-start="1550"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn" style="z-index: 10;">
+                        <a href="#purchase" class="btn btn-default btn-lg">
+                            <span>更多精彩 即可呈现</span>
+                        </a>
+                    </div>
+
+                </li>
+
+                <!-- SLIDE  -->
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Slide 3">
+                    <img src="images/1x1.png" data-lazyload="images/wall2.jpg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+                    <div class="tp-caption lfr"
+                         data-x="left" data-hoffset="60"
+                         data-y="85"
+                         data-speed="1500"
+                         data-start="500"
+                         data-easing="easeOutExpo"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"
+                         style="z-index: 2;">
+                        <img src="images/1x1.png" data-lazyload="images/ipad.png" alt="" />
+                    </div>
+
+                    <div class="tp-caption block_black sft"
+                         data-x="right" data-hoffset="-70"
+                         data-y="137"
+                         data-speed="750"
+                         data-start="1100"
+                         data-easing="easeOutExpo"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"
+                         style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">优秀的地点
+                    </div>
+
+                    <div class="tp-caption block_black sfb"
+                         data-x="right" data-hoffset="-70"
+                         data-y="176"
+                         data-speed="750"
+                         data-start="1400"
+                         data-easing="easeOutExpo"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"
+                         style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">100% 的专注和努力
+                    </div>
+
+                    <div class="tp-caption block_theme_color sft"
+                         data-x="right"  data-hoffset="-70"
+                         data-y="239"
+                         data-speed="750"
+                         data-start="1700"
+                         data-easing="easeOutExpo"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"
+                         style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">精彩与你
+                    </div>
+
+                    <div class="tp-caption block_theme_color sfb"
+                         data-x="right"  data-hoffset="-70"
+                         data-y="278"
+                         data-speed="750"
+                         data-start="2000"
+                         data-easing="easeOutExpo"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"
+                         style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">让我们 &amp; 共同迎接阳光
+                    </div>
+
+                    <div class="tp-caption block_black sft"
+                         data-x="right"  data-hoffset="-70"
+                         data-y="340"
+                         data-speed="750"
+                         data-start="2300"
+                         data-easing="easeOutExpo"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"
+                         style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">为你而为，有你才美丽
+                    </div>
+                </li>
+
+
+                <!-- SLIDE -->
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide 6">
+
+                    <img src="images/1x1.png" data-lazyload="images/back.jpg" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                    <div class="tp-caption tp-fade fadeout fullscreenvideo"
+                         data-x="0"
+                         data-y="50"
+                         data-speed="1000"
+                         data-start="1100"
+                         data-easing="Power4.easeOut"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1500"
+                         data-endeasing="Power4.easeIn"
+                         data-autoplay="true"
+                         data-autoplayonlyfirsttime="false"
+                         data-nextslideatend="true"
+                         data-volume="mute"
+                         data-forceCover="1"
+                         data-aspectratio="16:9"
+                         data-forcerewind="on" style="z-index: 2;">
+
+                        <div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
+
+                        <video class="" preload="none" style="widt:100%;height:100%" poster="images/video/back.jpg">
+                            <source src="images/video/back.webm" type="video/webm" />
+                            <source src="images/video/back.mp4" type="video/mp4" />
+                        </video>
+
+                    </div>
+
+                    <div class="tp-caption customin ltl tp-resizeme text_white"
+                         data-x="center"
+                         data-y="155"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-start="1000"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn" style="z-index: 3;">
+                        <span class="weight-300">狂欢吧 / 尖叫吧 / 兴奋吧 / 激烈吧</span>
+                    </div>
+
+                    <div class="tp-caption customin ltl tp-resizeme large_bold_white"
+                         data-x="center"
+                         data-y="205"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-start="1200"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn" style="z-index: 3;">
+                        让我们一起嗨
+                    </div>
+
+                    <div class="tp-caption customin ltl tp-resizeme small_light_white font-lato"
+                         data-x="center"
+                         data-y="295"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-start="1400"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn" style="z-index: 3; width: 100%; max-width: 750px; white-space: normal; text-align:center; font-size:20px;">
+                        微风拂过，你我同在。目光所及皆是祝福，你好我便好。心若在，爱还在..
+                    </div>
+
+                    <div class="tp-caption customin ltl tp-resizeme"
+                         data-x="center"
+                         data-y="363"
+                         data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-start="1550"
+                         data-easing="easeOutQuad"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.01"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-endeasing="Power4.easeIn" style="z-index: 3;">
+                        <a href="#purchase" class="btn btn-default btn-lg">
+                            <span>我现在就要加入</span>
+                        </a>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <div class="tp-bannertimer"><!-- progress bar --></div>
+        </div>
+    </div>
+    <!-- /全屏焦点图 -->
+
+    <!-- 业务栏 -->
+    <section class="info-bar info-bar-clean">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <i class="glyphicon glyphicon-globe"></i>
+                    <h3>我们的服务</h3>
+                    <p>一对一贴心服务，真诚真心</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <i class="glyphicon glyphicon-usd"></i>
+                    <h3>金融安全</h3>
+                    <p>保障客户利益，第一时间呵护你的投资</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <i class="glyphicon glyphicon-flag"></i>
+                    <h3>行业领先</h3>
+                    <p>引导科技潮流，技术创新合作</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /业务栏 -->
+
+
+    <!-- 欢迎辞 -->
+    <section class="nopadding-bottom">
+        <div class="container">
+            <header class="text-center margin-bottom-40">
+                <h1 class="weight-300">欢迎来到衍生科技</h1>
+                <h2 class="weight-300 letter-spacing-1 size-13"><span>我们将用最贴心的服务来报答你的厚爱</span></h2>
+            </header>
+
+            <div class="text-center">
+                <p class="lead">
+                    文案示范： 秉承“品质第一，用户至上”的宗旨，坚持始于客户要求，终于客户满意的原则， 励迪树立坚定明确的品质观念，秉持专业精神，专注核心优势，追求卓越品质， 以优质的产品，高品质的售后服务不断提升产品价值和企业形象
+                </p>
+
+                <div class="margin-top-40">
+                    <img class="img-responsive" src="images/ipad.jpg" alt="welcome" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /欢迎辞 -->
+
+    <!-- 功能演示-->
+    <section class="alternate">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="box-icon box-icon-side box-icon-color box-icon-round">
+                        <i class="fa fa-tablet"></i>
+                        <a class="box-icon-title" href="#">
+                            <h2>优秀的代码编程</h2>
+                        </a>
+                        <p>文案示范： 秉承“品质第一，用户至上”的宗旨，坚持始于客户要求，终于客户满意的原则， 励迪树立坚定明确的品质观念，秉持专业精神，专注核心优势，追求卓越品质， 以优质的产品，高品质的售后服务不断提升产品价值和企业形象</p>
+                        <a class="box-icon-more font-lato weight-300" href="#">查看更多</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="box-icon box-icon-side box-icon-color box-icon-round">
+                        <i class="fa fa-tint"></i>
+                        <a class="box-icon-title" href="#">
+                            <h2>非常需要优秀的策划</h2>
+                        </a>
+                        <p>文案示范： 秉承“品质第一，用户至上”的宗旨，坚持始于客户要求，终于客户满意的原则， 励迪树立坚定明确的品质观念，秉持专业精神，专注核心优势，追求卓越品质， 以优质的产品，高品质的售后服务不断提升产品价值和企业形象</p>
+                        <a class="box-icon-more font-lato weight-300" href="#">查看更多</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="box-icon box-icon-side box-icon-color box-icon-round">
+                        <i class="fa fa-cogs"></i>
+                        <a class="box-icon-title" href="#">
+                            <h2>科技的力量</h2>
+                        </a>
+                        <p>文案示范： 秉承“品质第一，用户至上”的宗旨，坚持始于客户要求，终于客户满意的原则， 励迪树立坚定明确的品质观念，秉持专业精神，专注核心优势，追求卓越品质， 以优质的产品，高品质的售后服务不断提升产品价值和企业形象</p>
+                        <a class="box-icon-more font-lato weight-300" href="#">查看更多</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /功能演示 -->
+
+    <!-- 加入我们 -->
+    <section>
+        <div class="container">
+            <header class="text-center margin-bottom-40">
+                <h1 class="weight-300">一份好的策划能影响整个网站</h1>
+                <h2 class="weight-300 letter-spacing-1 size-13"><span>加入我们一起来进行网络营销策略</span></h2>
+            </header>
+
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <p>   文案示范： 秉承“品质第一，用户至上”的宗旨，坚持始于客户要求，终于客户满意的原则， 励迪树立坚定明确的品质观念，秉持专业精神，专注核心优势，追求卓越品质， 以优质的产品，高品质的售后服务不断提升产品价值和企业形象</p>
+
+                    <p>   文案示范： 秉承“品质第一，用户至上”的宗旨，坚持始于客户要求，终于客户满意的原则， 励迪树立坚定明确的品质观念，秉持专业精神，专注核心优势，追求卓越品质， 以优质的产品，高品质的售后服务不断提升产品价值和企业形象</p>
+
+                    <a class="btn btn-default" href="#">立即加入</a>
+                </div>z
+
+                <div class="col-sm-6">
+                    <img class="img-responsive" src="images/support.jpg" alt="support" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /加入我们 -->
+
+    <!-- 卡片盒 -->
+    <section class="nopadding noborder">
+
+        <div class="row box-gradient box-gray">
+            <div class="col-xs-6 col-sm-3">
+                <i class="fa fa-child fa-4x"></i>
+                <h2 class="countTo font-raleway" data-speed="3000">8165</h2>
+                <p>加入的会员</p>
+            </div>
+
+            <div class="col-xs-6 col-sm-3">
+                <i class="fa fa-smile-o fa-4x"></i>
+                <h2 class="countTo font-raleway" data-speed="3000">1033</h2>
+                <p>点赞的伙伴</p>
+            </div>
+
+            <div class="col-xs-6 col-sm-3">
+                <i class="fa fa-heart fa-4x"></i>
+                <h2 class="countTo font-raleway" data-speed="3000">24567</h2>
+                <p>总服务人员</p>
+            </div>
+
+            <div class="col-xs-6 col-sm-3">
+                <i class="fa fa-female fa-4x"></i>
+                <h2 class="countTo font-raleway" data-speed="3000">68</h2>
+                <p>还有更多</p>
+            </div>
+        </div>
+    </section>
+    <!-- /卡片盒 -->
+
+    <!-- 功能展示 -->
+    <section>
+        <div class="container">
+
+            <header class="text-center margin-bottom-40">
+                <h1 class="weight-300">企业营销策略</h1>
+                <h2 class="weight-300 letter-spacing-1 size-13"><span>不浪费客户的任何投资</span></h2>
+            </header>
+
+            <div class="row margin-top-80">
+
+                <div class="col-lg-4 col-md-4 col-md-push-4 text-center">
+
+                    <img class="img-responsive" src="images/iphone-min.png" alt="" />
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-md-pull-4">
+
+                    <div class="box-icon box-icon-right">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-eye"></i>
+                            <h2>专业</h2>
+                        </a>
+                        <p>局域网监控一般分为上网监控和内网监控，特别提醒：应针对自己实际的环境和需求真实认真地测试，任何的好产品或好软件都不会怕你真实测试比较的；因此测试是最关键；</p>
+                    </div>
+
+                    <div class="box-icon box-icon-right">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-check"></i>
+                            <h2>真诚</h2>
+                        </a>
+                        <p>以上描述了完整的网络监控软件应包含上网监视和控制+内网监视和控制，并提供了基本的决策参考比较时应包含的基本的功能模块分类；以实际环境实际测试为准</p>
+                    </div>
+
+                    <div class="box-icon box-icon-right">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-rocket"></i>
+                            <h2>加油吧，兄弟</h2>
+                        </a>
+                        <p>不同人、不同单位、不同时间会产生不同的需求，我们无法一概而论你的所有的需求，只能说提供一些决策建议参考，以及产品实际测试为条件下的决策比对</p>
+                    </div>
+
+                    <div class="box-icon box-icon-right">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-flash"></i>
+                            <h2>信任</h2>
+                        </a>
+                        <p>以上功能是一个内网监控软件都应起码包含的基本功能，可提供用户决策比较参考，再此提示一定要实际环境全功能测试比较，测试才是最关键的</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-tablet"></i>
+                            <h2>最好的服务</h2>
+                        </a>
+                        <p>学校科技节策划啊，想个开头，想三个活动，然后想个结尾就行呗，想着难，其实真琢磨起来很容易就入戏了</p>
+                    </div>
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-random"></i>
+                            <h2>科技至上</h2>
+                        </a>
+                        <p>局域网,网络监控,全攻略,监控软件,监控原理,网络监控软件,上网行为管理,内网管理,透明文件加密,反复制,信息安全,流量监控,网桥模式,QQ聊天记录监控,驱动,WINPCAP缺点</p>
+                    </div>
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-tint"></i>
+                            <h2>互联网安全</h2>
+                        </a>
+                        <p>计算机网络的普及应用已渗透到社会各个层面，给社会带来便利的同时也随之带来的安全和管理问题。互联网络是一把双刃剑</p>
+                    </div>
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-cogs"></i>
+                            <h2>加入我们</h2>
+                        </a>
+                        <p>不同人、不同单位、不同时间会产生不同的需求，我们无法一概而论你的所有的需求，只能说提供一些决策建议参考，以及产品实际测试为条件下的决策比对</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- /功能展示 -->
+
+    <!-- 广告 -->
+    <section class="callout-dark heading-title heading-arrow-bottom">
+        <div class="container">
+
+            <header class="text-center">
+                <h1 class="weight-300 size-40">品牌展示</h1>
+                <h2 class="weight-300 letter-spacing-1 size-13"><span>一切皆有可能，我们一心一意追求完美，您的认可就是我们的一切</span></h2>
+            </header>
+
+        </div>
+    </section>
+    <!-- /广告 -->
+
+    <!-- 品牌 -->
+    <section class="nopadding">
+        <div id="portfolio" class="portfolio-nogutter">
+            <div class="row mix-grid">
+
+                <div class="col-md-3 col-sm-3 mix development"><!-- item -->
+
+                    <div class="item-box">
+                        <figure>
+									<span class="item-hover">
+										<span class="overlay dark-5"></span>
+										<span class="inner">
+
+											<!-- lightbox -->
+											<a class="ico-rounded lightbox" href="images/1200x800/1-min.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+											<a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+										</span>
+									</span>
+
+                            <img class="img-responsive" src="images/600x399/1-min.jpg" width="600" height="399" alt="">
+                        </figure>
+
+                        <div class="item-box-desc">
+                            <h3>企业商标注册</h3>
+                            <ul class="list-inline categories nomargin">
+                                <li><a href="#">代理服务</a></li>
+                                <li><a href="#">设计</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- /item -->
+
+
+                <div class="col-md-3 col-sm-3 mix development"><!-- item -->
+
+                    <div class="item-box">
+                        <figure>
+									<span class="item-hover">
+										<span class="overlay dark-5"></span>
+										<span class="inner">
+
+											<!-- lightbox -->
+											<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/11-min.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+											<a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+										</span>
+									</span>
+
+                            <img class="img-responsive" src="images/600x399/11-min.jpg" width="600" height="399" alt="">
+                        </figure>
+
+                        <div class="item-box-desc">
+                            <h3>画册制作，创意设计</h3>
+                            <ul class="list-inline categories nomargin">
+                                <li><a href="#">画册</a></li>
+                                <li><a href="#">印刷</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- /item -->
+
+
+                <div class="col-md-3 col-sm-3 mix photography"><!-- item -->
+
+                    <div class="item-box">
+                        <figure>
+									<span class="item-hover">
+										<span class="overlay dark-5"></span>
+										<span class="inner">
+
+											<!-- lightbox -->
+											<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/20-min.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+											<a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+										</span>
+									</span>
+
+                            <img class="img-responsive" src="images/600x399/20-min.jpg" width="600" height="399" alt="">
+                        </figure>
+
+                        <div class="item-box-desc">
+                            <h3>UI设计，动画演示</h3>
+                            <ul class="list-inline categories nomargin">
+                                <li><a href="#">设计</a></li>
+                                <li><a href="#">动画</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- /item -->
+
+
+                <div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+                    <div class="item-box">
+                        <figure>
+									<span class="item-hover">
+										<span class="overlay dark-5"></span>
+										<span class="inner">
+
+											<!-- lightbox -->
+											<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/19-min.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+											<a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+										</span>
+									</span>
+
+                            <img class="img-responsive" src="images/600x399/19-min.jpg" width="600" height="399" alt="">
+                        </figure>
+
+                        <div class="item-box-desc">
+                            <h3>最好的朋友</h3>
+                            <ul class="list-inline categories nomargin">
+                                <li><a href="#">音乐</a></li>
+                                <li><a href="#">动感</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- /item -->
+
+
+                <div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+                    <div class="item-box">
+                        <figure>
+									<span class="item-hover">
+										<span class="overlay dark-5"></span>
+										<span class="inner">
+
+											<!-- lightbox -->
+											<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/12-min.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+											<a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+										</span>
+									</span>
+
+                            <img class="img-responsive" src="images/600x399/12-min.jpg" width="600" height="399" alt="">
+                        </figure>
+
+                        <div class="item-box-desc">
+                            <h3>UI设计，动画演示</h3>
+                            <ul class="list-inline categories nomargin">
+                                <li><a href="#">设计</a></li>
+                                <li><a href="#">动画</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- /item -->
+
+
+                <div class="col-md-3 col-sm-3 mix development"><!-- item -->
+
+                    <div class="item-box">
+                        <figure>
+									<span class="item-hover">
+										<span class="overlay dark-5"></span>
+										<span class="inner">
+
+											<!-- lightbox -->
+											<a class="ico-rounded lightbox" href="images/1200x800/13-min.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+											<a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+										</span>
+									</span>
+
+                            <img class="img-responsive" src="images/600x399/13-min.jpg" width="600" height="399" alt="">
+                        </figure>
+
+                        <div class="item-box-desc">
+                            <h3>UI设计，动画演示</h3>
+                            <ul class="list-inline categories nomargin">
+                                <li><a href="#">设计</a></li>
+                                <li><a href="#">动画</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- /item -->
+
+
+                <div class="col-md-3 col-sm-3 mix photography"><!-- item -->
+
+                    <div class="item-box">
+                        <figure>
+									<span class="item-hover">
+										<span class="overlay dark-5"></span>
+										<span class="inner">
+
+											<!-- lightbox -->
+											<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/14-min.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+											<a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+										</span>
+									</span>
+
+                            <img class="img-responsive" src="images/600x399/14-min.jpg" width="600" height="399" alt="">
+                        </figure>
+
+                        <div class="item-box-desc">
+                            <h3>UI设计，动画演示</h3>
+                            <ul class="list-inline categories nomargin">
+                                <li><a href="#">设计</a></li>
+                                <li><a href="#">动画</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- /item -->
+
+
+                <div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+                    <div class="item-box">
+                        <figure>
+									<span class="item-hover">
+										<span class="overlay dark-5"></span>
+										<span class="inner">
+
+											<!-- lightbox -->
+											<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/15-min.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+											<a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+										</span>
+									</span>
+
+                            <img class="img-responsive" src="images/600x399/15-min.jpg" width="600" height="399" alt="">
+                        </figure>
+
+                        <div class="item-box-desc">
+                            <h3>UI设计，动画演示</h3>
+                            <ul class="list-inline categories nomargin">
+                                <li><a href="#">设计</a></li>
+                                <li><a href="#">动画</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- /item -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /品牌 -->
+
+    <!-- 广告 -->
+    <section class="parallax parallax-2" style="background-image: url('images/1200x800/3-min.jpg');">
+        <div class="overlay dark-8"><!-- dark overlay [1 to 9 opacity] --></div>
+
+        <div class="container">
+
+            <div class="text-center">
+                <h3 class="nomargin">广告区域</h3>
+                <p class="font-lato weight-300 lead nomargin-top">任何一个人都可不能成功，需要一个团队的支持和鼓励，谢谢大家给予我的支持，我将会努力做好每一件事。</p>
+            </div>
+
+            <ul class="margin-top-80 social-icons list-unstyled list-inline">
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-facebook"></i>
+                        <h4>Facebook</h4>
+                        <span>分享</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-twitter"></i>
+                        <h4>Twitter</h4>
+                        <span>分享</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-youtube"></i>
+                        <h4>Youtube</h4>
+                        <span>查看视频</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <span>查看图片</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-linkedin"></i>
+                        <h4>Linkedin</h4>
+                        <span>社交</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-pinterest"></i>
+                        <h4>Pinterest</h4>
+                        <span>发现新奇的玩意儿</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+    <!-- /广告 -->
+
+
+    <!-- 团队 -->
+    <section>
+        <div class="container">
+
+            <header class="text-center margin-bottom-60">
+                <h1 class="weight-300">我们的团队</h1>
+                <h2 class="weight-300 letter-spacing-1 size-13"><span>这就是我们最可爱的团队</span></h2>
+            </header>
+
+            <div class="row">
+
+                <!-- item -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="box-flip box-color box-icon box-icon-center box-icon-round box-icon-large text-center">
+                        <div class="front">
+                            <div class="box1 box-default">
+                                <div class="box-icon-title">
+                                    <img class="img-responsive" src="images/460x700/7-min.jpg" alt="" />
+                                    <h2>小樱桃</h2>
+                                    <small>CEO</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="box2 box-default">
+                                <h4 class="nomargin">小樱桃</h4>
+                                <small>CEO</small>
+
+                                <hr />
+
+                                <p>你不要这样的看着我，我会害羞我会，我会，我会把这些全部都吃掉的，因为我是小樱桃。</p>
+
+                                <hr />
+
+                                <a href="#" class="social-icon social-icon-sm social-facebook">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon social-icon-sm social-twitter">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon social-icon-sm social-linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /item -->
+
+                <!-- item -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="box-flip box-color box-icon box-icon-center box-icon-round box-icon-large text-center">
+                        <div class="front">
+                            <div class="box1 box-default">
+                                <div class="box-icon-title">
+                                    <img class="img-responsive" src="images/460x700/12-min.jpg" alt="" />
+                                    <h2>安妮</h2>
+                                    <small>设计师</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="box2 box-default">
+                                <h4 class="nomargin">安妮</h4>
+                                <small>设计师</small>
+
+                                <hr />
+
+                                <p>不要和我说话，心情不好，想吃东西。</p>
+
+                                <hr />
+
+                                <a href="#" class="social-icon social-icon-sm social-facebook">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon social-icon-sm social-twitter">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon social-icon-sm social-linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /item -->
+
+                <!-- item -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="box-flip box-color box-icon box-icon-center box-icon-round box-icon-large text-center">
+                        <div class="front">
+                            <div class="box1 box-default">
+                                <div class="box-icon-title">
+                                    <img class="img-responsive" src="images/460x700/10-min.jpg" alt="" />
+                                    <h2>玛丽</h2>
+                                    <small>营销经理</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="box2 box-default">
+                                <h4 class="nomargin">玛丽</h4>
+                                <small>营销经理</small>
+
+                                <hr />
+
+                                <p>让我们荡起双桨，一起运动，朋友们，燥起来。路上好像有什么东西掉了，呀，是金子...！！</p>
+
+                                <hr />
+
+                                <a href="#" class="social-icon social-icon-sm social-facebook">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon social-icon-sm social-twitter">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon social-icon-sm social-linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /item -->
+
+                <!-- item -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="box-flip box-color box-icon box-icon-center box-icon-round box-icon-large text-center">
+                        <div class="front">
+                            <div class="box1 box-default">
+                                <div class="box-icon-title">
+                                    <img class="img-responsive" src="images/460x700/8-min.jpg" alt="" />
+                                    <h2>希望</h2>
+                                    <small>经理</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="box2 box-default">
+                                <h4 class="nomargin">希望</h4>
+                                <small>经理</small>
+
+                                <hr />
+
+                                <p>我说的是英文：Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere</p>
+
+                                <hr />
+
+                                <a href="#" class="social-icon social-icon-sm social-facebook">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon social-icon-sm social-twitter">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon social-icon-sm social-linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /item -->
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- /TEAM -->
+
+
+
+
+    <!-- RECENT NEWS -->
+    <section>
+        <div class="container">
+
+            <header class="text-center margin-bottom-60">
+                <h1 class="weight-300">新闻中心</h1>
+                <h2 class="weight-300 letter-spacing-1 size-13"><span>看看身边又发生了什么好玩儿的事情？！</span></h2>
+            </header>
+
+            <!--
+                controlls-over		= navigation buttons over the image
+                buttons-autohide 	= navigation buttons visible on mouse hover only
+
+                data-plugin-options:
+                    "singleItem": true
+                    "autoPlay": true (or ms. eg: 4000)
+                    "navigation": true
+                    "pagination": true
+                    "items": "4"
+
+                owl-carousel item paddings
+                    .owl-padding-0
+                    .owl-padding-3
+                    .owl-padding-6
+                    .owl-padding-10
+                    .owl-padding-15
+                    .owl-padding-20
+            -->
+            <div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
+                <div class="img-hover">
+                    <a href="blog-single-default.html">
+                        <img class="img-responsive" src="images/451x300/24-min.jpg" alt="">
+                    </a>
+
+                    <h4 class="text-left margin-top-20"><a href="blog-single-default.html">和尚故事</a></h4>
+                    <p class="text-left">一个和尚挑水喝，两个和尚没水喝，三个和尚在一起会发生什么事情呢</p>
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            29th Jan 2015
+                        </li>
+                        <li>
+                            <a href="blog-single-default.html#comments">
+                                <i class="fa fa-comments"></i>
+                                3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img-hover">
+                    <a href="blog-single-default.html">
+                        <img class="img-responsive" src="images/451x300/17-min.jpg" alt="">
+                    </a>
+
+                    <h4 class="text-left margin-top-20"><a href="blog-single-default.html">回忆的伤</a></h4>
+                    <p class="text-left">我的心好痛，我的心好痛，我不想打字了，反正没内容。</p>
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            29th Jan 2015
+                        </li>
+                        <li>
+                            <a href="blog-single-default.html#comments">
+                                <i class="fa fa-comments"></i>
+                                3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img-hover">
+                    <a href="blog-single-default.html">
+                        <img class="img-responsive" src="images/451x300/30-min.jpg" alt="">
+                    </a>
+
+                    <h4 class="text-left margin-top-20"><a href="blog-single-default.html">你在看什么</a></h4>
+                    <p class="text-left">不要和我说话，我现在打字中，比较无聊和烦躁，已经下班了，我还没走。</p>
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            29th Jan 2015
+                        </li>
+                        <li>
+                            <a href="blog-single-default.html#comments">
+                                <i class="fa fa-comments"></i>
+                                3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img-hover">
+                    <a href="blog-single-default.html">
+                        <img class="img-responsive" src="images/451x300/26-min.jpg" alt="">
+                    </a>
+
+                    <h4 class="text-left margin-top-20"><a href="blog-single-default.html">夜晚的风</a></h4>
+                    <p class="text-left">宣传拓展阶段：  在前期的基础上，此阶段我们将加大宣传的力度和广度，旨在为同学们提供一个翔实的了解平台</p>
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            29th Jan 2015
+                        </li>
+                        <li>
+                            <a href="blog-single-default.html#comments">
+                                <i class="fa fa-comments"></i>
+                                3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img-hover">
+                    <a href="blog-single-default.html">
+                        <img class="img-responsive" src="images/451x300/18-min.jpg" alt="">
+                    </a>
+                    <h4 class="text-left margin-top-20"><a href="blog-single-default.html">夜晚的风</a></h4>
+                    <p class="text-left">宣传拓展阶段：  在前期的基础上，此阶段我们将加大宣传的力度和广度，旨在为同学们提供一个翔实的了解平台</p>
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            29th Jan 2015
+                        </li>
+                        <li>
+                            <a href="blog-single-default.html#comments">
+                                <i class="fa fa-comments"></i>
+                                3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img-hover">
+                    <a href="blog-single-default.html">
+                        <img class="img-responsive" src="images/451x300/34-min.jpg" alt="">
+                    </a>
+                    <h4 class="text-left margin-top-20"><a href="blog-single-default.html">夜晚的风</a></h4>
+                    <p class="text-left">宣传拓展阶段：  在前期的基础上，此阶段我们将加大宣传的力度和广度，旨在为同学们提供一个翔实的了解平台</p>
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            29th Jan 2015
+                        </li>
+                        <li>
+                            <a href="blog-single-default.html#comments">
+                                <i class="fa fa-comments"></i>
+                                3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img-hover">
+                    <a href="blog-single-default.html">
+                        <img class="img-responsive" src="images/451x300/37-min.jpg" alt="">
+                    </a>
+                    <h4 class="text-left margin-top-20"><a href="blog-single-default.html">夜晚的风</a></h4>
+                    <p class="text-left">宣传拓展阶段：  在前期的基础上，此阶段我们将加大宣传的力度和广度，旨在为同学们提供一个翔实的了解平台</p>
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            29th Jan 2015
+                        </li>
+                        <li>
+                            <a href="blog-single-default.html#comments">
+                                <i class="fa fa-comments"></i>
+                                3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img-hover">
+                    <a href="blog-single-default.html">
+                        <img class="img-responsive" src="images/451x300/23-min.jpg" alt="">
+                    </a>
+                    <h4 class="text-left margin-top-20"><a href="blog-single-default.html">夜晚的风</a></h4>
+                    <p class="text-left">宣传拓展阶段：  在前期的基础上，此阶段我们将加大宣传的力度和广度，旨在为同学们提供一个翔实的了解平台</p>
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            29th Jan 2015
+                        </li>
+                        <li>
+                            <a href="blog-single-default.html#comments">
+                                <i class="fa fa-comments"></i>
+                                3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- /RECENT NEWS -->
+
+
+    <!--
+        controlls-over		= navigation buttons over the image
+        buttons-autohide 	= navigation buttons visible on mouse hover only
+
+        data-plugin-options:
+            "singleItem": true
+            "autoPlay": true (or ms. eg: 4000)
+            "navigation": true
+            "pagination": true
+    -->
+    <div class="text-center margin-top-30 margin-bottom-30">
+        <div class="owl-carousel nomargin" data-plugin-options='{"items":6, "singleItem": false, "autoPlay": true}'>
+            <div>
+                <img class="img-responsive" src="images/brands/1.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-responsive" src="images/brands/2.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-responsive" src="images/brands/3.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-responsive" src="images/brands/4.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-responsive" src="images/brands/5.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-responsive" src="images/brands/6.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-responsive" src="images/brands/7.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-responsive" src="images/brands/8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer id="footer">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <!-- 页脚LOGO -->
+                    <img class="footer-logo" src="images/logo-footer.png" alt="" />
+
+                    <!-- 文本介绍 -->
+                    <p>微风拂过，你我同在。目光所及皆是祝福，你好我便好。心若在，爱还在..</p>
+
+                    <!-- Contact Address -->
+                    <address>
+                        <ul class="list-unstyled">
+                            <li class="footer-sprite address">
+                                河南 郑州市<br>
+                                金水区曼哈顿广场<br>
+                                五号楼六单元5002<br>
+                            </li>
+                            <li class="footer-sprite phone">
+                                Phone: 151-361-31411
+                            </li>
+                            <li class="footer-sprite email">
+                                <a href="mailto:support@yourname.com">support@yourname.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <!-- /Contact Address -->
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <!-- Latest Blog Post -->
+                    <h4 class="letter-spacing-1">最新新闻</h4>
+                    <ul class="footer-posts list-unstyled">
+                        <li>
+                            <a href="#"> 衍生科技将站在新的起点，坦然迎接机遇和挑战
+                            </a>
+                            <small>29 June 2015</small>
+                        </li>
+                        <li>
+                            <a href="#">
+                                精诚合作，远见未来
+                               </a>
+                            <small>29 June 2015</small>
+                        </li>
+                        <li>
+                            <a href="#">
+                                在瞬息万变的市场面前不断超越自我，积极创新，与广大合作伙伴携手共赢，再创新的辉煌
+                                </a>
+                            <small>29 June 2015</small>
+                        </li>
+                    </ul>
+                    <!-- /Latest Blog Post -->
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <!-- Links -->
+                    <h4 class="letter-spacing-1">快速导航</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">我们的服务</a></li>
+                        <li><a href="#">企业文化</a></li>
+                        <li><a href="#">领导致辞</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                    <!-- /Links -->
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <!-- Newsletter Form -->
+                    <h4 class="letter-spacing-1">合作和加盟</h4>
+                    <p>已经有很多客户自愿加入我们的 &amp; 队伍</p>
+
+                    <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input type="email" id="email" name="email" class="form-control required" placeholder="请输入你的邮箱">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">订阅</button>
+									</span>
+                        </div>
+                    </form>
+                    <!-- /Newsletter Form -->
+
+                    <!-- Social Icons -->
+                    <div class="margin-top-20">
+                        <a href="#" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="#" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+                            <i class="icon-gplus"></i>
+                            <i class="icon-gplus"></i>
+                        </a>
+
+                        <a href="#" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <i class="icon-linkedin"></i>
+                            <i class="icon-linkedin"></i>
+                        </a>
+
+                        <a href="#" class="social-icon social-icon-border social-rss pull-left" data-toggle="tooltip" data-placement="top" title="Rss">
+                            <i class="icon-rss"></i>
+                            <i class="icon-rss"></i>
+                        </a>
+
+                    </div>
+                    <!-- /Social Icons -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <ul class="pull-right nomargin list-inline mobile-block">
+                    <li><a href="#">我们的 &amp; 队伍</a></li>
+                    <li>&bull;</li>
+                    <li><a href="#">开发者:visdark</a></li>
+                </ul>
+                &copy; All Rights Reserved, Company LTD 版权所有 衍生科技有限责任公司
+            </div>
+        </div>
+    </footer>
+    <!-- /页脚 -->
+</div>
+<!-- /页面主题 -->
+
+<!-- 右侧侧边栏 -->
+<div id="sidepanel" class="sidepanel-light">
+    <a id="sidepanel_close" href="#">
+        <!-- 关闭 -->
+        <i class="glyphicon glyphicon-remove"></i>
+    </a>
+
+    <div class="sidepanel-content">
+        <h2 class="sidepanel-title">在线客服</h2>
+
+        <!-- 右侧导航 -->
+        <ul class="list-group">
+
+            <li class="list-group-item">
+                <a href="#">
+                    <i class="ico-category et-heart"></i>
+                    关于我们
+                </a>
+            </li>
+            <li class="list-group-item list-toggle"><!-- add "active" to stay open on page load -->
+                <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-1" class="collapsed">
+                    <i class="ico-dd icon-angle-down"><!-- Drop Down Indicator --></i>
+                    <i class="ico-category et-strategy"></i>
+                    QQ在线
+                </a>
+                <ul id="collapse-1" class="list-unstyled collapse"><!-- add "in" to stay open on page load -->
+                    <li><a href="#"><i class="fa fa-angle-right"></i> QQ 服务号1</a></li>
+                    <li class="active">
+                        <span class="badge">最新美女</span>
+                        <a href="#"><i class="fa fa-angle-right"></i> QQ 服务号2</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> QQ 服务号3</a></li>
+                </ul>
+            </li>
+            <li class="list-group-item list-toggle">
+                <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-2" class="collapsed">
+                    <i class="ico-dd icon-angle-down"></i>
+                    <i class="ico-category et-trophy"></i>
+                    分享
+                </a>
+                <ul id="collapse-2" class="list-unstyled collapse">
+                    <li><a href="#"><i class="fa fa-angle-right"></i> 微信</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right"></i> 腾讯</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> 微博</a></li>
+                </ul>
+            </li>
+            <li class="list-group-item">
+                <a href="#">
+                    <i class="ico-category et-happy"></i>
+                    我的博客
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">
+                    <i class="ico-category et-beaker"></i>
+                    收藏
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">
+                    <i class="ico-category et-map-pin"></i>
+                    在线留言
+                </a>
+            </li>
+
+        </ul>
+        <!-- /右侧导航 -->
+
+        <!-- 分享图标 -->
+        <div class="text-center margin-bottom-30">
+
+            <a href="#" class="social-icon social-icon-sm social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="icon-facebook"></i>
+                <i class="icon-facebook"></i>
+            </a>
+
+            <a href="#" class="social-icon social-icon-sm social-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="icon-twitter"></i>
+                <i class="icon-twitter"></i>
+            </a>
+
+            <a href="#" class="social-icon social-icon-sm social-linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                <i class="icon-linkedin"></i>
+                <i class="icon-linkedin"></i>
+            </a>
+
+            <a href="#" class="social-icon social-icon-sm social-rss" data-toggle="tooltip" data-placement="top" title="RSS">
+                <i class="icon-rss"></i>
+                <i class="icon-rss"></i>
+            </a>
+
+        </div>
+        <!-- /分享图标 -->
+
+    </div>
+
+</div>
+<!-- /右侧侧边栏 -->
+
+
+<!-- 返回顶部 -->
+<a href="#" id="toTop"></a>
+
+<!-- 读取条 -->
+<div id="preloader">
+    <div class="inner">
+        <span class="loader"></span>
+    </div>
+</div>
+<!-- /读取条 -->
+
+
+
+<!-- JS脚本文件 -->
+<script type="text/javascript">var plugin_path = 'plugins/';</script>
+<script type="text/javascript" src="plugins/jquery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script async type="text/javascript" src="plugins/styleswitcher/styleswitcher.js"></script>
+<script type="text/javascript" src="plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/view/demo.revolution_slider.js"></script>
+<!-- /JS脚本文件 -->
+
+</body>
+</html>
